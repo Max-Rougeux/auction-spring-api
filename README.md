@@ -92,52 +92,6 @@ Le profil actif se règle via la variable `SPRING_PROFILES_ACTIVE` (défaut : `m
 
 ---
 
-## Lancement
-
-Le projet s'utilise via les scripts `scripts/run.sh` (Linux/macOS) ou `scripts/run.bat` (Windows) :
-
-```
-# Linux/macOS
-./scripts/run.sh [--profile <mode>] [-dev] [--build]
-
-# Windows
-scripts\run.bat [--profile <mode>] [-dev] [--build]
-```
-
-### Options
-
-| Option | Description |
-|---|---|
-| `--profile <mode>` | Profil BDD : `mock` (défaut), `sqlserver`, `postgresql` |
-| `-dev` | Mode développement — Spring Boot local, BDD dans Docker |
-| `--build` | Force le rebuild des images Docker |
-
-### Exemples
-
-```bash
-# Production mock (sans BDD externe)
-./scripts/run.sh
-
-# Production SQL Server
-./scripts/run.sh --profile sqlserver
-
-# Production PostgreSQL avec rebuild
-./scripts/run.sh --profile postgresql --build
-
-# Dev mock (Spring Boot local, sans Docker)
-./scripts/run.sh -dev
-
-# Dev PostgreSQL
-./scripts/run.sh --profile postgresql -dev
-
-# Dev PostgreSQL avec rebuild
-./scripts/run.sh --profile postgresql -dev --build
-```
-
-> Sur Windows, remplacer `./scripts/run.sh` par `scripts\run.bat`.
-
----
-
 ## Endpoints REST
 
 Toutes les réponses suivent l'enveloppe `ApiResponse<T>` (`code`, `message`, `data`, `meta` optionnel avec pagination `page`/`size`/`total`/`pages`).
