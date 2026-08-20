@@ -10,7 +10,7 @@ Projet personnel d'API REST d'enchères en ligne, développé pour approfondir l
 
 ## Documentation technique
 
-La documentation détaillée de l'architecture est disponible sur [DeepWiki](https://deepwiki.com/Max-Rougeux/spring-rest-project).
+La documentation détaillée de l'architecture est disponible sur [DeepWiki](https://deepwiki.com/Max-Rougeux/auction-spring-api).
 
 ---
 
