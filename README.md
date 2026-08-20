@@ -6,6 +6,7 @@ Projet personnel d'API REST d'enchères en ligne, développé pour approfondir l
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.0.6-brightgreen)](https://spring.io/projects/spring-boot)
 [![Docker](https://img.shields.io/badge/Docker-Compose-blue)](https://docs.docker.com/compose/)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Max-Rougeux/auction-spring-api)
+
 ---
 
 ## Client Angular
@@ -14,6 +15,7 @@ Interface web du projet, développée en Angular 21 avec une architecture basée
 
 [![Angular](https://img.shields.io/badge/Angular-21-DD0031?logo=angular&logoColor=white)](https://github.com/Max-Rougeux/auction-angular-client)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Max-Rougeux/auction-angular-client)
+
 ---
 
 ## Stack technique
