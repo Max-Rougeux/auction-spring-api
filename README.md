@@ -5,13 +5,7 @@ Projet personnel d'API REST d'enchères en ligne, développé pour approfondir l
 [![Java](https://img.shields.io/badge/Java-21-orange)](https://openjdk.org/projects/jdk/21/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.0.6-brightgreen)](https://spring.io/projects/spring-boot)
 [![Docker](https://img.shields.io/badge/Docker-Compose-blue)](https://docs.docker.com/compose/)
----
-
-
-## Documentation technique
-
-La documentation détaillée de l'architecture est disponible sur [DeepWiki](https://deepwiki.com/Max-Rougeux/auction-spring-api).
-
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Max-Rougeux/auction-spring-api)
 ---
 
 ## Client Angular
