@@ -16,9 +16,9 @@ La documentation détaillée de l'architecture est disponible sur [DeepWiki](htt
 
 ## Client Angular
 
-Interface web du projet, développée en Angular 19 avec une architecture basée sur les Signals (state réactif) et des mises à jour temps réel via WebSocket (STOMP).
+Interface web du projet, développée en Angular 21 avec une architecture basée sur les Signals (state réactif) et des mises à jour temps réel via WebSocket (STOMP).
 
-[![Angular](https://img.shields.io/badge/Angular-19-DD0031?logo=angular&logoColor=white)](https://github.com/Max-Rougeux/auction-angular-client)
+[![Angular](https://img.shields.io/badge/Angular-21-DD0031?logo=angular&logoColor=white)](https://github.com/Max-Rougeux/auction-angular-client)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Max-Rougeux/auction-angular-client)
 ---
 
