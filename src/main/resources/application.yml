@@ -1,0 +1,57 @@
+# application.yml
+
+spring:
+  application:
+    name: Auction Rest Server
+  config:
+    import: optional:file:.env[.properties]
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:mock}
+  threads:
+    virtual:
+      enabled: true
+
+app:
+  cors:
+    origins: http://localhost:4200,http://localhost:3000,http://192.168.1.11:4200
+  jwtSecret: ${JWT_SECRET}
+  uploads:
+    dir: ./uploads
+
+logging:
+  level:
+    org.springframework.web: ${LOG_LEVEL:INFO}
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.orm.jdbc.bind: TRACE
+
+---
+spring:
+  config:
+    activate:
+      on-profile: sqlserver
+  datasource:
+    url: jdbc:sqlserver://${MS_DB_HOST:localhost}:${MS_DB_PORT:1433};databaseName=AUCTION;trustServerCertificate=true;
+    username: ${MS_DB_USERNAME:sa}
+    password: ${MS_DB_PASSWORD}
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+---
+spring:
+  config:
+    activate:
+      on-profile: postgresql
+  datasource:
+    url: jdbc:postgresql://${PG_DB_HOST:localhost}:${PG_DB_PORT:5432}/AUCTION
+    username: ${PG_DB_USERNAME:postgres}
+    password: ${PG_DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true

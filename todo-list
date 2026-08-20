@@ -1,0 +1,9 @@
+1. Rate limit
+2. Scheduled jobs (sale life cycle)
+3. Item creation / sale publication
+4. Notification persistence ?
+5. Credit management / stripe ?
+6. Dashboard owner/admin + role management
+7. add PREMIUM/VIP role with PriceManager/PrivateSale
+8. Multi session by RefreshToken.username via client-id
+8. MongoDb implementation
