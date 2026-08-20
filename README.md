@@ -255,16 +255,3 @@ auction-rest/
 ├── local.yml                               # Docker Compose dev
 └── production.yml                          # Docker Compose prod
 ```
-
----
-
-## Tests
-
-```bash
-# Lancer les tests unitaires
-./mvnw test          # Linux/macOS
-.\mvnw.cmd test      # Windows
-```
-
-Les tests unitaires utilisent JUnit 5 + Mockito.
-
