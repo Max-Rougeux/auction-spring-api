@@ -38,7 +38,7 @@ Interface web du projet, développée en Angular 19 avec une architecture basée
 
 ## Prérequis
 
-- Java 17
+- Java 21
 - Maven 3.x+
 - Docker & Docker Compose _(requis pour les profils `sqlserver` et `postgresql`)_
 
@@ -82,13 +82,11 @@ ADMIN_PASSWORD=your_admin_password
 
 ## Profils disponibles
 
-> ⚠️ **Les profils `sqlserver` et `postgresql` ne sont pas à jour.** Il est recommandé d'utiliser le profil `mock` pour tester l'API.
-
 | Profil | Persistance | Couche d'accès | Dépendances externes | État |
 |---|---|---|---|---|
 | `mock` | In-memory (ArrayList) | DAO custom | Aucune | ✅ Stable |
-| `sqlserver` | Microsoft SQL Server | Spring Data JDBC | Docker | ⚠️ Non maintenu |
-| `postgresql` | PostgreSQL | Spring Data JPA / Hibernate | Docker | ⚠️ Non maintenu |
+| `sqlserver` | Microsoft SQL Server | Spring Data JDBC | Docker |  ✅ Stable |
+| `postgresql` | PostgreSQL | Spring Data JPA / Hibernate | Docker |  ✅ Stable |
 
 Le profil actif se règle via la variable `SPRING_PROFILES_ACTIVE` (défaut : `mock`).
 
